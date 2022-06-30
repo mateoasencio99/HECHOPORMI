@@ -1,0 +1,68 @@
+@use "components";
+
+@mixin section-display {
+    width: 100%;
+    max-width: 992px;
+    margin: auto;
+    padding: 2rem;
+}
+
+html {
+    min-width: 100vw;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 8rem;
+    border-bottom: solid 1px #ddd;
+    background-color: components.$color-main;
+
+}
+
+.logo a img {
+    max-width: 7rem;
+
+}
+
+.sec-home {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include section-display();
+
+    
+    .video{
+        width: 20rem;
+        height: 18rem;
+    }
+    
+    
+}
+
+
+
+.sec-benefits {
+    border-top: 1px solid #ddd;
+    .intro {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+       .parrafo{
+        font-size: 1.3rem;
+       }
+
+    }
+    .benefit-cards {
+        width: 100%;
+        padding: 0 2rem 2rem 2rem;
+    }
+}
