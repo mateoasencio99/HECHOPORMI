@@ -123,21 +123,22 @@ body {
   margin: auto;
   padding: 2rem;
 }
-.sec-home .video {
-  width: 20rem;
-  height: 18rem;
+.sec-home .intro {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.sec-home .intro .parrafo {
+  font-size: 1.3rem;
 }
 
 .sec-benefits {
   border-top: 1px solid #ddd;
 }
-.sec-benefits .intro {
-  flex-direction: column;
+.sec-benefits .imagenes {
+  display: flex;
   justify-content: center;
-  text-align: center;
-}
-.sec-benefits .intro .parrafo {
-  font-size: 1.3rem;
+  align-items: center;
 }
 .sec-benefits .benefit-cards {
   width: 100%;

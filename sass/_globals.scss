@@ -39,19 +39,6 @@ body {
     justify-content: center;
     @include section-display();
 
-    
-    .video{
-        width: 20rem;
-        height: 18rem;
-    }
-    
-    
-}
-
-
-
-.sec-benefits {
-    border-top: 1px solid #ddd;
     .intro {
         flex-direction: column;
         justify-content: center;
@@ -59,8 +46,21 @@ body {
        .parrafo{
         font-size: 1.3rem;
        }
-
     }
+}
+
+
+
+.sec-benefits {
+    border-top: 1px solid #ddd;
+
+    .imagenes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
     .benefit-cards {
         width: 100%;
         padding: 0 2rem 2rem 2rem;
